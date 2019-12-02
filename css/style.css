@@ -6,5 +6,58 @@
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url(../images/tenor.gif) no-repeat center center;
+  background: #fff url(../images/tenor1.gif) no-repeat center center;
+}
+.enzo {
+  text-transform: uppercase;
+  padding: 2px 7px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  display: flex;
+}
+h1 {
+	letter-spacing: 0.2em;
+}
+h1 span {
+	opacity: 0;
+	display: inline-block;
+	animation: animate 1s linear forwards;
+}
+@keyframes animate
+{
+	0% {
+		opacity: 0;
+		transform: rotateY(90deg);
+		filter: blur(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: rotateY(0deg);
+		filter: blur(0);
+	}
+}
+h1 span:nth-child(1)
+{
+	animation-delay: 1s; 
+}
+h1 span:nth-child(2)
+{
+	animation-delay: 2s; 
+}
+h1 span:nth-child(3)
+{
+	animation-delay: 2.5s; 
+}
+h1 span:nth-child(4)
+{
+	animation-delay: 3s; 
+}
+h1 span:nth-child(5)
+{
+	animation-delay: 3.5s; 
 }
