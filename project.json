@@ -1,0 +1,23 @@
+{
+	"description" : "v1.0\n - 初始版本；\nv1.1\n - 修改右上角亮度，看起来不会刺眼；\nv1.2\n - 修复左下部分色阶，看起来更加平滑；\nv1.3\n - 更改状态栏颜色为#c9ad9e；",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.788235294117647 0.6784313725490196 0.6196078431372549"
+			}
+		}
+	},
+	"monetization" : false,
+	"preview" : "preview.jpg",
+	"title" : "樱花漫天飞舞",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : 822222705
+}
