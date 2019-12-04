@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 	$(window).on('load', function () {
     if ($('#preloader').length) {
-      $('#preloader').delay(1500).fadeOut('slow', function () {
+      $('#preloader').delay(2200).fadeOut('slow', function () {
         $(this).remove();
       });
     }
@@ -18,7 +18,7 @@ $(document).ready(function(){
 		var startLeft = getRandomArbitrary(0, screenWidth);
 		var timeRun = getRandomArbitrary(4000, 6000);
 		var opacityR = Math.random() * (1 - 0.2) + 0.2;
-		var sizeR = getRandomArbitrary(10, 40);
+		var sizeR = getRandomArbitrary(15, 40);
 		var endLeft = getRandomArbitrary(startLeft - 100, startLeft + 100);
 		var snow = document.createElement('span');
 
