@@ -45,6 +45,9 @@ h1 span:nth-child(1)
 {
 	animation-delay: 1s; 
 }
+.ps {
+	padding-left: 15px;
+}
 h1 span:nth-child(2)
 {
 	animation-delay: 2s; 
