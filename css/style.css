@@ -1,3 +1,5 @@
+/*    Loading    */
+
 #preloader {
   position: fixed;
   left: 0;
@@ -6,61 +8,279 @@
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url(../images/tenor1.gif) no-repeat center center;
+  background: #fff url(../images/tenor.gif) no-repeat center center;
 }
-.enzo {
+/*  backgroud  */
+body {
+  height: 100vh;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+  box-shadow: 0 .5rem 2rem rgba(0,0,0,0.15) !important;
+}
+.container {
+  margin: 0 !important;
+  padding-top: 20px;
+}
+/*  Follow me   */
+.noel {
+	color: white;
+}
+.noel a {
+	text-decoration: none;
+	font-size: 25px;
+}
+.noel a .btn-noel {
+	background: white;
+	border: none;
+  color: #4267b2;
+}
+.noel a .btn-noel:hover {
+	background: #4267b2;
+	color: white;
+}
+/*  Merry christmas  */
+.intro {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.intro .intro-content {
+  text-align: center;
+  position: absolute;
+}
+
+.intro .overlay-itro {  
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .9;
+}
+
+.intro .intro-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.intro .intro-subtitle {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.intro .text-slider-items {
+  display: none;
+}
+
+.intro-single {
+  height: 350px;
+}
+
+.intro-single .intro-content {
+  margin-top: 30px;
+}
+
+.intro-single .intro-title {
   text-transform: uppercase;
-  padding: 2px 7px;
+  font-size: 3rem;
+}
+
+.merry-light {
+  margin: 0;
+  padding: 0;
+  color: #111;
+  font-size: 5em;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 0;
-  font-size: 40px;
   display: flex;
 }
-h1 {
-	letter-spacing: 0.2em;
+.kc {
+  padding-left: 15px;
 }
-h1 span {
-	opacity: 0;
-	display: inline-block;
-	animation: animate 1s linear forwards;
-}
-@keyframes animate
-{
-	0% {
-		opacity: 0;
-		transform: rotateY(90deg);
-		filter: blur(10px);
-	}
-	100% {
-		opacity: 1;
-		transform: rotateY(0deg);
-		filter: blur(0);
-	}
+h1 span{
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  animation: animate 3.5s linear infinite;
 }
 h1 span:nth-child(1)
 {
-	animation-delay: 1s; 
-}
-.ps {
-	padding-left: 15px;
+  animation-delay: 0s;
 }
 h1 span:nth-child(2)
 {
-	animation-delay: 2s; 
+  animation-delay: 0.25s;
 }
 h1 span:nth-child(3)
 {
-	animation-delay: 2.5s; 
+  animation-delay: 0.5s;
 }
 h1 span:nth-child(4)
 {
-	animation-delay: 3s; 
+  animation-delay: 0.75s;
 }
 h1 span:nth-child(5)
 {
-	animation-delay: 3.5s; 
+  animation-delay: 1s;
+}
+h1 span:nth-child(6)
+{
+  animation-delay: 1.25s;
+}
+h1 span:nth-child(7)
+{
+  animation-delay: 1.5s;
+}
+h1 span:nth-child(8)
+{
+  animation-delay: 1.75s;
+}
+h1 span:nth-child(9)
+{
+  animation-delay: 2s;
+}
+h1 span:nth-child(10)
+{
+  animation-delay: 2.25s;
+}
+h1 span:nth-child(11)
+{
+  animation-delay: 2.5s;
+}
+h1 span:nth-child(12)
+{
+  animation-delay: 2.75s;
+}
+h1 span:nth-child(13)
+{
+  animation-delay: 3s;
+}
+h1 span:nth-child(14)
+{
+  animation-delay: 3.25s;
+}
+@keyframes animate
+{
+  0%, 100% 
+  {
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #f02539,
+                0 0 20px #f02539,
+                0 0 40px #f02539,
+                0 0 80px #f02539,
+                0 0 120px #f02539,
+                0 0 200px #f02539,
+                0 0 300px #f02539,
+                0 0 400px #f02539;
+  }
+  5%, 95%
+  {
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+}
+
+.img-1 {
+  margin: 0;
+  padding: 0;
+  color: #f02539;
+  width: 300px auto;
+  height: 50%;
+  font-size: 8em;
+  position: absolute;
+  top: 80%;
+  left: 99%;
+  transform: translate(-99%, -99%);
+  display: flex;
+}
+.img-2 {
+  margin: 0;
+  padding: 0;
+  color: #f02539;
+  width: 300px;file:///C:/Users/Admin/Desktop/video-text/images/tuanloc.jpg
+  font-size: 8em;
+  position: absolute;
+  top: 30%;
+  left: 99%;
+  transform: translate(-99%, -99%);
+  display: flex;
+}
+.img-3 {
+  margin: 0;
+  padding: 0;
+  color: #f02539;
+  width: 300px;
+  font-size: 8em;
+  position: absolute;
+  top: 99%;
+  left: 20%;
+  transform: translate(-99%, -99%);
+  display: flex;
+}
+.img-noel {
+  margin: 0;
+  padding: 0;
+  color: #f02539;
+  font-size: 8em;
+  position: absolute;
+  top: 99%;
+  left: 99%;
+  transform: translate(-99%, -99%);
+  display: flex;
+}
+.img-noel3 {
+  margin: 0;
+  padding: 0;
+  color: #0b50ca;
+  font-size: 8em;
+  position: absolute;
+  top: 99%;
+  left: 91%;
+  transform: translate(-99%, -99%);
+  display: flex;
+}
+.img-noel4 {
+  margin: 0;
+  padding: 0;
+  color: #0b50ca;
+  font-size: 8em;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  transform: translate(-99%, -99%);
+  display: flex;
+}
+.img-noel2 {
+  margin: 0;
+  padding: 0;
+  color: #22aa4a;
+  font-size: 8em;
+  position: absolute;
+  top: 95%;
+  left: 95%;
+  transform: translate(-99%, -99%);
+  display: flex;
+}
+@media screen and (max-width: 1200px)
+{
+  .img-1 {
+    display: none !important;
+  }
+  .img-2 {
+    display: none !important;
+  }
+  .img-3 {
+    display: none !important;
+  }
 }
